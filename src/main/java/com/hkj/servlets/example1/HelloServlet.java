@@ -16,10 +16,10 @@ public class HelloServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title>Hello World!</title>");
+		out.println("<title>Hello World 황규정!</title>");
 		out.println("</head>");
 		out.println("<body>");
-		out.println("<h1>Hello World!</h1>");
+		out.println("<h1>Hello World! 황규정</h1>");
 		out.println("</body>");
 		out.println("</html>");
 }

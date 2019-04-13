@@ -6,6 +6,12 @@ repositories {
     jcenter()
 }
 
+compileJava {
+    options.encoding = "UTF-8"}
+
+javadoc {
+    options.encoding = "UTF-8"}
+
 dependencies {
 	providedCompile 'javax.servlet:javax.servlet-api:4.0.+'
 	providedCompile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.+'
@@ -63,5 +69,3 @@ task dist(dependsOn:makedist, type:Sync) {
 	from 'dist'
 	into "$appDir"
 }
-
-ant.importBuild 'build.xml'
